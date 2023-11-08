@@ -1,0 +1,190 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	margin: 0 auto
+	max-width: 1200px
+
+a
+	text-decoration: none
+
+.header
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-top: 52px
+	margin-bottom: 60px
+
+	&__logoAndName
+		display: flex
+		gap: 10px
+
+	&__heading
+		color: #292f36
+		font-family: DM Serif Display
+		font-size: 40px
+		font-style: normal
+		font-weight: 400
+		line-height: 125%
+
+	&__nav
+		display: flex
+		gap: 42px
+
+	&__nav a
+		color: #292F36
+		font-family: Jost
+		font-size: 20px
+		font-style: normal
+		font-weight: 400
+		line-height: 125%
+
+.topContent
+	width: 1200px
+	height: 758px
+	background: url(../img/main_img_big_1.svg), lightgray 50% / cover no-repeat
+	position: relative
+	border-radius: 80px
+	margin-bottom: 96px
+
+	&__description
+		position: absolute
+		top: 208px
+		left: 52px
+
+	&__description-heading
+		color: #292F36
+		font-family: DM Serif Display
+		font-size: 65px
+		font-style: normal
+		font-weight: 400
+		line-height: 125%
+		width: 434px
+		padding-bottom: 18px
+
+	&__description-text
+		color: #4D5053
+		font-family: Jost
+		font-size: 22px
+		font-style: normal
+		font-weight: 400
+		line-height: 150%
+		letter-spacing: 0.22px
+		width: 434px
+		padding-bottom: 21px
+
+	&__button
+		display: flex
+		padding: 26px 49px 26px 48px
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		gap: 10px
+		border-radius: 18px
+		background: #292F36
+		box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35)
+
+	&__button span
+		color: #FFF
+		text-align: center
+		font-family: Jost
+		font-size: 18px
+		font-style: normal
+		font-weight: 600
+		line-height: 125%
+		letter-spacing: 0.36px
+
+.midContent
+	display: flex
+	flex-direction: column
+
+	&__heading
+		display: flex
+		flex-direction: column
+		align-items: center
+		gap: 8px
+		margin-bottom: 93px
+
+	&__heading h2
+		color: #292F36
+		text-align: center
+		font-family: DM Serif Display
+		font-size: 50px
+		font-style: normal
+		font-weight: 400
+		line-height: 125%
+		letter-spacing: 1px
+		align-self: center
+
+	&__heading p
+		display: inline-block
+		color: #4D5053
+		text-align: center
+		font-family: Jost
+		font-size: 22px
+		font-style: normal
+		font-weight: 400
+		line-height: 150%
+		letter-spacing: 0.22px
+		width: 737px
+
+	&__box
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 100px
+
+	&__box-1, &__box-2
+		margin-bottom: 56px
+
+	&__box-img1
+		border-radius: 0px 80px 0px 0px
+		margin-bottom: 24px
+		width: 550px
+
+	&__box-img2
+		border-radius: 80px 0px 0px 0px
+		margin-bottom: 24px
+		width: 550px
+
+	&__box-img3
+		border-radius: 0px 0px 80px 0px
+		margin-bottom: 24px
+		width: 550px
+
+	&__box-img4
+		border-radius: 0px 0px 0px 80px
+		margin-bottom: 24px
+		width: 550px
+
+	&__box-description
+		display: flex
+		flex-direction: column
+		position: relative
+		gap: 4px
+		
+	&__box h3
+		color: #292F36
+		font-family: DM Serif Display
+		font-size: 25px
+		font-style: normal
+		font-weight: 400
+		line-height: 125%
+		letter-spacing: 0.5px
+
+	&__box p
+		color: #4D5053
+		font-family: Jost
+		font-size: 22px
+		font-style: normal
+		font-weight: 400
+		line-height: 150%
+		letter-spacing: 0.22px
+
+	&__box-description a
+		position: absolute
+		top: -5px
+		left: 480px
