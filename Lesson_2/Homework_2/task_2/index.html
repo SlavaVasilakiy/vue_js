@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-</head>
-<body>
-	<div class="app">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	</head>
 
-	</div>
-	<script>
-		const app = new Vue({
-			data: {
-				proucts: [
-					{title: 'Prouct 1', price: 100},
-					{title: 'Prouct 2', price: 150},
-					{title: 'Prouct 3', price: 50},
-					{title: 'Prouct 4', price: 20},
-					{title: 'Prouct 5', price: 300},
-				],
-				sorting: 'asc'
-			},
+	<body>
+		<div class="app">
+			<button @click="sortByPrice('asc')">Сортировать по возрастанию</button>
+			<button @click="sortByPrice('desc')">Сортировать по убыванию</button>
 
-			methods: {
-				
-			},
+			<ul>
+				<li v-for="(product, index) in sortedProducts" :key="index">
+					{{ product.title }} - {{ product.price }}
+				</li>
+			</ul>
+		</div>
 
-			computed: {
-				
-			},
-		});
-	</script>
-</body>
+		<script>
+			new Vue({
+				el: '.app',
+
+				data: {
+					products: [
+						{ title: 'Prouct 1', price: 100 },
+						{ title: 'Prouct 2', price: 150 },
+						{ title: 'Prouct 3', price: 50 },
+						{ title: 'Prouct 4', price: 20 },
+						{ title: 'Prouct 5', price: 300 },
+					],
+					sortBy: 'default',
+				},
+
+				methods: {
+					sortByPrice(order) {
+						this.sortBy = order.toLowerCase();
+					},
+				},
+
+				computed: {
+					sortedProducts() {
+						return this.sortBy === 'asc'
+							? [...this.products].sort((a, b) => a.price - b.price)
+							: this.sortBy === 'desc'
+							? [...this.products].sort((a, b) => b.price - a.price)
+							: [...this.products];
+					},
+				},
+			});
+		</script>
+	</body>
 </html>
