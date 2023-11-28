@@ -1,12 +1,16 @@
-* {
+*, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 120rem;
 }
 
 a {
@@ -17,78 +21,78 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 52px;
-  margin-bottom: 60px;
+  margin-top: 5.2rem;
+  margin-bottom: 6rem;
 }
 .header__logoAndName {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }
 .header__heading {
   color: #292f36;
   font-family: DM Serif Display;
-  font-size: 40px;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
 }
 .header__nav {
   display: flex;
-  gap: 42px;
+  gap: 4.2rem;
 }
 .header__nav a {
   color: #292F36;
   font-family: Jost;
-  font-size: 20px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
 }
 
 .topContent {
-  width: 1200px;
-  height: 758px;
+  height: 75.8rem;
   background: url(../img/main_img_big_1.svg), lightgray 50%/cover no-repeat;
   position: relative;
-  border-radius: 80px;
-  margin-bottom: 96px;
+  border-radius: 8rem;
+  margin-bottom: 9.6rem;
 }
 .topContent__description {
   position: absolute;
-  top: 208px;
-  left: 52px;
+  top: 20.8rem;
+  left: 5.2rem;
 }
 .topContent__description-heading {
   color: #292F36;
   font-family: DM Serif Display;
-  font-size: 65px;
+  font-size: 6.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  width: 434px;
-  padding-bottom: 18px;
+  width: 43.4rem;
+  padding-bottom: 1.8rem;
 }
 .topContent__description-text {
   color: #4D5053;
   font-family: Jost;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  letter-spacing: 0.22px;
-  width: 434px;
-  padding-bottom: 21px;
+  letter-spacing: 0.022rem;
+  width: 43.4rem;
+  padding-bottom: 2.1rem;
 }
 .topContent__button {
   display: flex;
-  padding: 26px 49px 26px 48px;
+  padding: 2.6rem 4.9rem 2.6rem 4.8rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  border-radius: 18px;
+  gap: 1rem;
+  border-radius: 1.8rem;
   background: #292F36;
-  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  box-shadow: 0rem 1rem 2rem 0rem rgba(192, 192, 192, 0.35);
+  cursor: pointer;
 }
 .topContent__button span {
   color: #FFF;
@@ -98,7 +102,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
-  letter-spacing: 0.36px;
+  letter-spacing: 0.036rem;
 }
 
 .midContent {
@@ -109,18 +113,18 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 93px;
+  gap: 0.8rem;
+  margin-bottom: 9.3rem;
 }
 .midContent__heading h2 {
   color: #292F36;
   text-align: center;
   font-family: DM Serif Display;
-  font-size: 50px;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  letter-spacing: 1px;
+  letter-spacing: 0.1rem;
   align-self: center;
 }
 .midContent__heading p {
@@ -132,65 +136,65 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  letter-spacing: 0.22px;
-  width: 737px;
+  letter-spacing: 0.022rem;
+  width: 73.7rem;
 }
 .midContent__box {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
 }
 .midContent__box-1, .midContent__box-2 {
-  margin-bottom: 56px;
+  margin-bottom: 5.6rem;
 }
 .midContent__box-img1 {
-  border-radius: 0px 80px 0px 0px;
-  margin-bottom: 24px;
-  width: 550px;
+  border-radius: 0rem 8rem 0rem 0rem;
+  margin-bottom: 2.4rem;
+  width: 55rem;
 }
 .midContent__box-img2 {
-  border-radius: 80px 0px 0px 0px;
-  margin-bottom: 24px;
-  width: 550px;
+  border-radius: 8rem 0rem 0rem 0rem;
+  margin-bottom: 2.4rem;
+  width: 55rem;
 }
 .midContent__box-img3 {
   border-radius: 0px 0px 80px 0px;
-  margin-bottom: 24px;
-  width: 550px;
+  margin-bottom: 2.4rem;
+  width: 55rem;
 }
 .midContent__box-img4 {
   border-radius: 0px 0px 0px 80px;
-  margin-bottom: 24px;
-  width: 550px;
+  margin-bottom: 2.4rem;
+  width: 55rem;
 }
 .midContent__box-description {
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 4px;
+  gap: 0.4rem;
 }
 .midContent__box h3 {
   color: #292F36;
   font-family: DM Serif Display;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
 }
 .midContent__box p {
   color: #4D5053;
   font-family: Jost;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  letter-spacing: 0.22px;
+  letter-spacing: 0.022rem;
 }
 .midContent__box-description a {
   position: absolute;
-  top: -5px;
-  left: 480px;
+  top: -0.5rem;
+  left: 48rem;
 }/*# sourceMappingURL=style.css.map */
