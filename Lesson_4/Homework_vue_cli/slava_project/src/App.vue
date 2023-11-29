@@ -9,8 +9,8 @@ import BlogDetailsPage from './pages/BlogDetailsPage.vue';
 export default {
 	name: 'App',
 	components: {
-    // HomePage,
-    BlogDetailsPage
+		// HomePage,
+		BlogDetailsPage
 },
 };
 </script>

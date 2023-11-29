@@ -20,7 +20,7 @@
 export default {
 	name: 'HeaderComponent',
 	data() {
-		return;
+		return {};
 	},
 	computed: {},
 	props: {},

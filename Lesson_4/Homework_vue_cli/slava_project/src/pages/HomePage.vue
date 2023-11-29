@@ -153,7 +153,7 @@
 			</section>
 		</main>
 
-		<FooterComponent/>
+		<FooterComponent />
 	</div>
 </template>
 
@@ -165,12 +165,12 @@ import HomePageMiddleButton from '@/components/HomePageMiddleButton';
 export default {
 	name: 'HomePage',
 	components: {
-    HomePageMiddleButton,
-    HeaderComponent,
-    FooterComponent
-},
+		HomePageMiddleButton,
+		HeaderComponent,
+		FooterComponent,
+	},
 	data() {
-		return
+		return {};
 	},
 	computed: {},
 	props: {},
