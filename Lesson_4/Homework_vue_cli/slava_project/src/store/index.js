@@ -38,7 +38,7 @@ export default {
 						available: false,
 					},
 				]);
-			}, 2);
+			}, 2000);
 		},
 	},
 
