@@ -1,19 +1,17 @@
 <template>
-	<ProductDetails />
+	<div>
+		<MyCart />
+	</div>
 </template>
 
 <script>
-import ProductDetails from './components/ProductDetails.vue';
-
-// import BlogDetailsPage from './pages/BlogDetailsPage.vue';
-// import HomePage from './pages/HomePage.vue';
+import MyCart from './components/MyCart.vue';
+// import MyCounter from './components/MyCounter.vue';
 
 export default {
 	name: 'App',
 	components: {
-		ProductDetails,
-		// BlogDetailsPage,
-		// HomePage
+		MyCart,
 	},
 };
 </script>
