@@ -47,10 +47,9 @@ export default {
 			return state.products;
 		},
 
-		//* Можно ли делать такую запись ? *//
-		// formattedPrice: () => product => {
-		// 	return `$${product.price}`;
-		// },
+		formattedPrice: () => product => {
+			return `$${product.price}`;
+		},
 	},
 
 	mutations: {

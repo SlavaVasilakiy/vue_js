@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<HeaderComponent />
+
 
 		<main>
 			<section class="topContent">
@@ -44,7 +44,7 @@
 					<div class="midContent__box-1">
 						<img
 							class="midContent__box-img1"
-							src="../assets/img/middle_img_left_top.svg"
+							src="../assets/img/middle_img_left_top.jpg"
 							alt="middle_img_left_top"
 						/>
 						<div class="midContent__box-description">
@@ -56,7 +56,7 @@
 					<div class="midContent__box-2">
 						<img
 							class="midContent__box-img2"
-							src="../assets/img/middle_img_right_top.svg"
+							src="../assets/img/middle_img_right_top.jpg"
 							alt="middle_img_right_top"
 						/>
 						<div class="midContent__box-description">
@@ -68,7 +68,7 @@
 					<div class="midContent__box-3">
 						<img
 							class="midContent__box-img3"
-							src="../assets/img/middle_img_left_bottom.svg"
+							src="../assets/img/middle_img_left_bottom.jpg"
 							alt="middle_img_left_bottom"
 						/>
 						<div class="midContent__box-description">
@@ -80,7 +80,7 @@
 					<div class="midContent__box-4">
 						<img
 							class="midContent__box-img4"
-							src="../assets/img/middle_img_right_bottom.svg"
+							src="../assets/img/middle_img_right_bottom.jpg"
 							alt="middle_img_right_bottom"
 						/>
 						<div class="midContent__box-description">
@@ -120,7 +120,7 @@
 					</p>
 				</div>
 				<div>
-					<img src="../assets/img/bottom_img_left.svg" alt="bottom_img_left" />
+					<img src="../assets/img/bottom_img_left.jpg" alt="bottom_img_left" />
 					<h3>Let’s Get Solution For Building Construction Work</h3>
 					<p>26 December,2022</p>
 					<button type="button">
@@ -129,7 +129,7 @@
 				</div>
 				<div>
 					<img
-						src="../assets/img/bottom_img_middle.svg"
+						src="../assets/img/bottom_img_middle.jpg"
 						alt="bottom_img_middle"
 					/>
 					<h3>Low Cost Latest Invented Interior Designing Ideas.</h3>
@@ -140,7 +140,7 @@
 				</div>
 				<div>
 					<img
-						src="../assets/img/bottom_img_right.svg"
+						src="../assets/img/bottom_img_right.jpg"
 						alt="bottom_img_right"
 					/>
 					<h3>Best For Any Office & Business Interior Solution</h3>
@@ -153,21 +153,16 @@
 			</section>
 		</main>
 
-		<FooterComponent />
 	</div>
 </template>
 
 <script>
-import FooterComponent from '@/components/FooterComponent.vue';
-import HeaderComponent from '@/components/HeaderComponent';
 import HomePageMiddleButton from '@/components/HomePageMiddleButton';
 
 export default {
 	name: 'HomePage',
 	components: {
 		HomePageMiddleButton,
-		HeaderComponent,
-		FooterComponent,
 	},
 	data() {
 		return {};
@@ -212,7 +207,7 @@ export default {
 
 .topContent
 	height: 75.8rem
-	background: url(../assets/img/main_img_big_1.svg), lightgray 50% / cover no-repeat
+	background: url(../assets/img/main_img_big_1.jpg), lightgray 50% / cover no-repeat
 	position: relative
 	border-radius: 8rem
 	margin-bottom: 9.6rem
