@@ -7,29 +7,43 @@
 					<p class="banner__heading__p">Home / Project</p>
 				</div>
 			</div>
-			<section class="navigation">
-				<nav class="projects-nav">
-					<label class="projects-list">
-						Bathroom
-						<input type="radio" v-model="selectedCategory" value="Bathroom" />
-					</label>
-					<label class="projects-list">
-						Bed Room
-						<input type="radio" v-model="selectedCategory" value="Bedroom" />
-					</label>
-					<label class="projects-list">
-						Kitchan
-						<input type="radio" v-model="selectedCategory" value="Kitchan" />
-					</label>
-					<label class="projects-list">
-						Living Area
-						<input
-							type="radio"
-							v-model="selectedCategory"
-							value="Living Area"
-						/>
-					</label>
-				</nav>
+			<section class="navigation_center">
+				<div class="navigation">
+					<nav class="projects-nav">
+						<label
+							class="projects-list"
+							:class="{ selected: selectedCategory === 'Bathroom' }"
+						>
+							Bathroom
+							<input type="radio" v-model="selectedCategory" value="Bathroom" />
+						</label>
+						<label
+							class="projects-list"
+							:class="{ selected: selectedCategory === 'Bedroom' }"
+						>
+							Bed&nbsp;Room
+							<input type="radio" v-model="selectedCategory" value="Bedroom" />
+						</label>
+						<label
+							class="projects-list"
+							:class="{ selected: selectedCategory === 'Kitchan' }"
+						>
+							Kitchan
+							<input type="radio" v-model="selectedCategory" value="Kitchan" />
+						</label>
+						<label
+							class="projects-list"
+							:class="{ selected: selectedCategory === 'Living Area' }"
+						>
+							Living&nbsp;Area
+							<input
+								type="radio"
+								v-model="selectedCategory"
+								value="Living Area"
+							/>
+						</label>
+					</nav>
+				</div>
 			</section>
 			<!-- <section class="projects">
 				<div class="project-box">
@@ -186,7 +200,7 @@ export default {
 	name: 'ProjectPage',
 
 	methods: {
-		...mapActions("projects", ["setCategory", "filterProjects"])
+		...mapActions('projects', ['setCategory', 'filterProjects']),
 	},
 
 	computed: {
@@ -254,11 +268,16 @@ export default {
 	border-radius: 1.8rem
 	border: .01rem solid #CDA274
 	margin-bottom: 6rem
+	width: 88rem
+
+	&_center
+		width: 100%
+		display: flex
+		justify-content: center
 
 .projects-nav
-	width: 88rem
 	height: 7.5rem
-	gap: 9.6rem
+	gap: 1rem
 	display: flex
 	justify-content: center
 	align-items: center
@@ -271,6 +290,17 @@ export default {
 	line-height: 125%
 	letter-spacing: .036rem
 
+.projects-list input
+	display: none
+
+.projects-list
+	cursor: pointer
+	padding: 2.6rem 6.6rem
+	border-radius: 1.8rem
+
+.selected
+	background-color: #CDA274
+	color: #FFF
 
 .projects
 	margin-bottom: 20rem
