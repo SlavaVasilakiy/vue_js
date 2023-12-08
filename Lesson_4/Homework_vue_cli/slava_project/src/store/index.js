@@ -1,3 +1,9 @@
+import Vue from "vue";
+import Vuex from "vuex";
+import projects from "./projects";
+
+Vue.use(Vuex);
+
 export default {
 	state: {
 		products: [],
@@ -58,5 +64,7 @@ export default {
 		},
 	},
 
-	modules: {},
+	modules: {
+		projects
+	},
 };

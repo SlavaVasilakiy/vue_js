@@ -1,15 +1,17 @@
 <template>
 	<div>
 		<HeaderComponent/>
-		<ProductDetails />
+		<!-- <ProductDetails /> -->
 		<!-- <HomePage /> -->
+		<ProjectPage></ProjectPage>
 		<FooterComponent/>
 	</div>
 </template>
 
 <script>
+import ProjectPage from './pages/ProjectPage'
 import FooterComponent from './components/FooterComponent'
-import ProductDetails from './components/ProductDetails.vue';
+// import ProductDetails from './components/ProductDetails.vue';
 // import BlogDetailsPage from './pages/BlogDetailsPage.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
 // import HomePage from './pages/HomePage.vue';
@@ -17,8 +19,9 @@ import HeaderComponent from './components/HeaderComponent.vue';
 export default {
 	name: 'App',
 	components: {
+    ProjectPage,
     FooterComponent,
-    ProductDetails,
+    // ProductDetails,
     // BlogDetailsPage,
     // HomePage,
     HeaderComponent
