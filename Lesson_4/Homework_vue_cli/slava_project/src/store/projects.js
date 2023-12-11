@@ -80,6 +80,7 @@ const getters = {
 			)
 			: state.projects;
 	},
+	selectedCategory: state => state.selectedCategory,
 };
 
 export default {

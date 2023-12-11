@@ -82,7 +82,12 @@ export default {
 	},
 
 	computed: {
-		...mapGetters('projects', ['filteredProjects']),
+		...mapGetters('projects', [
+			'filteredProjects',
+			'categories',
+			'selectedCategory',
+		]),
+
 		selectedCategory: {
 			get() {
 				return this.$store.state.projects.selectedCategory;

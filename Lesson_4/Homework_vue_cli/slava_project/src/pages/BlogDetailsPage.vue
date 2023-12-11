@@ -1,7 +1,5 @@
 <template>
 	<div>
-		<HeaderComponent />
-
 		<main>
 			<div class="background-photo"></div>
 			<section class="content">
@@ -39,18 +37,14 @@
 				<hr />
 			</div>
 		</main>
-
-		<FooterComponent />
 	</div>
 </template>
 
 <script>
-import FooterComponent from '@/components/FooterComponent.vue';
-import HeaderComponent from '@/components/HeaderComponent.vue';
+
 
 export default {
 	name: 'BlogDetailsPage',
-	components: { HeaderComponent, FooterComponent },
 
 	data() {
 		return {
