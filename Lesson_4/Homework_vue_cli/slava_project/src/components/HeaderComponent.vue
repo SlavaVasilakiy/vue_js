@@ -9,9 +9,9 @@
 			<h1 class="header__heading">Interno</h1>
 		</div>
 		<nav class="header__nav">
-			<a href="#home">Home</a>
-			<a href="#project">Project</a>
-			<a href="#blog">Blog</a>
+			<router-link to="/">Home</router-link>
+			<router-link to="project">Project</router-link>
+			<router-link to="blog">Blog</router-link>
 		</nav>
 	</header>
 </template>

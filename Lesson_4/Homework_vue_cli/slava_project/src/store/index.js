@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import projects from "./projects";
-import projectDetails from './projectdetails';
+import detailsOfProject from './projectdetails';
 
 Vue.use(Vuex);
 
@@ -67,6 +67,6 @@ export default {
 
 	modules: {
 		projects,
-		projectDetails,
+		detailsOfProject,
 	},
 };

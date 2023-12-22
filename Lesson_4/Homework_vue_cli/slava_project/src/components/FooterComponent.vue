@@ -3,11 +3,13 @@
 		<footer class="footer">
 			<div class="block-1">
 				<div class="block-1__logomain">
-					<img
-						class="block-1__logomain__img"
-						src="../assets/logo/header_logo.svg"
-						alt="logo"
-					/>
+					<router-link to="/">
+						<img
+							class="block-1__logomain__img"
+							src="../assets/logo/header_logo.svg"
+							alt="logo"
+						/>
+					</router-link>
 					<h3>Interno</h3>
 				</div>
 				<div class="block-1__paragraph">
@@ -31,9 +33,9 @@
 			</div>
 			<div class="block-2">
 				<h5>Pages</h5>
-				<a href="#home">Home</a>
-				<a href="#project">Project</a>
-				<a href="#blog">Blog</a>
+				<router-link to="/">Home</router-link>
+				<router-link to="project">Project</router-link>
+				<router-link to="blog">Blog</router-link>
 			</div>
 			<div class="block-3">
 				<h5>Contacts</h5>
@@ -90,6 +92,7 @@ export default {
 	&__logomain
 		display: flex
 		gap: 1rem
+		align-items: center
 		padding-bottom: 1.8rem
 
 	&__logomain__img

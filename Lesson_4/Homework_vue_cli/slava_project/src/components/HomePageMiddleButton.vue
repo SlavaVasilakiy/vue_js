@@ -1,7 +1,6 @@
 <template>
-	<a href="#"
-		><img src="../assets/img/middle_buttons.svg" alt="middle_buttons"
-	/></a>
+	<router-link to="project_details"><img src="../assets/img/middle_buttons.svg" alt="middle_buttons"
+	/></router-link>
 </template>
 
 <script>

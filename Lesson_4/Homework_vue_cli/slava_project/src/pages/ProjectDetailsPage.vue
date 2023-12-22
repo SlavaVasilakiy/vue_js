@@ -32,6 +32,18 @@
 					/>
 				</svg>
 			</div>
+			<div class="slider__pagination">
+				<div
+					v-for="(project, index) in currentProject"
+					:key="index"
+					@click="selectProject(index)"
+					class="pagination-dot"
+					:class="{ active: index === currentIndex }"
+				>
+					<!-- Внутренняя точка для активного кружка -->
+					<div v-if="index === currentIndex" class="inner-dot"></div>
+				</div>
+			</div>
 		</section>
 	</div>
 </template>
@@ -43,11 +55,18 @@ export default {
 	name: 'ProjectDetailsPage',
 
 	computed: {
-		...mapGetters('projectDetails', ['currentProject']),
+		...mapGetters('detailsOfProject', [
+			'currentProject',
+			'currentIndex',
+		]),
 	},
 
 	methods: {
-		...mapActions('projectDetails', ['nextProject', 'prevProject']),
+		...mapActions('detailsOfProject', [
+			'nextProject',
+			'prevProject',
+			'selectProject',
+		]),
 	},
 };
 </script>
@@ -86,10 +105,15 @@ export default {
 
 .slider
 	margin-bottom: 20rem
+	display: flex
+	flex-direction: column
 
 	&__buttons
 		display: flex
 		justify-content: space-evenly
+
+		& svg
+			cursor: pointer
 
 .slider img
 	border-radius: 7rem

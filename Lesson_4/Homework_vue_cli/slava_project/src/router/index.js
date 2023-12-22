@@ -1,30 +1,42 @@
-/*import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+// import HomePage from '@/pages/HomePage.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ /*'../views/AboutView.vue')
-  }
-]
+	{
+		path: '/',
+		name: 'home',
+		// component: HomePage,
+		component: () => import('@/pages/HomePage.vue'), // для оптимизации трафика, компонент будет загружаться только в момент обращения к нему.
+	},
+	{
+		path: '/blog',
+		name: 'blog',
+		component: () => import('@/pages/BlogDetailsPage.vue')
+	},
+	{
+		path: '/project',
+		name: 'project',
+		component: () => import('@/pages/ProjectPage.vue')
+	},
+	{
+		path: '/project_details',
+		name: 'project_details',
+		component: () => import('@/pages/ProjectDetailsPage.vue')
+	},
+	{
+		path: '*',
+		name: 'notFound',
+		component: () => import('@/pages/NotFoundPage.vue')
+	}
+];
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
+	mode: 'history',
+	base: process.env.BASE_URL,
+	routes,
+});
 
-export default router
-*/
+export default router;
